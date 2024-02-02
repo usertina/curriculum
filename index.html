@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Currículum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<body>    
+    <div class="container">
+       
+        <div class="left-column">
+            <section class="photo">
+                <img src="fotos/foto.jpg">
+            </section>
+            <header>
+                <h3>CONTACTO</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> 690755866</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 48013 Bilbao</li>
+                    <li><i class="fas fa-envelope"></i> agustinacalleja@gmail.com</li>
+                    <li><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://es.linkedin.com/in/tina-calleja-91a07460">Tina Calleja</a></li>
+                    <li><i class="fab fa-github"></i> GitHub: <a href="https://github.com/usertina">usertina</a></li>
+                </ul>  
+                </ul>  
+            </header>
+        
+            <section class="education">
+                <h3>EDUCACIÓN</h3>
+                <ul>
+                    <li><strong> Desarrollo Web full stack
+                        Kooperativa Peñascal
+                        -actualidad-</strong></li>
+                        <p>Diseño de  la interfaz de usuario de un sitio web con tecnologías del lado de cliente, HTML, CSS, JAVASCRIPT(front-end). Creación de la lógica de programación en servidor con JAVASCRIPT, PHP, PHYTON(back-end).</p>
+                    <li><strong>
+                        Urduliz 42
+                        -octubre 2023-</strong></li>
+                        <p>Metodología basada en la gamificación y “el peer to peer” en el que se fomenta la creatividad, el esfuerzo, la superación y el trabajo en equipo aprendiendo en lenguaje C con ordenadores MAC.</p>
+                    <li><strong>Curso de programación de apps para dispositivos Android
+                        Fundación Ede
+                        -Octubre 2022,Marzo 2023-</strong></li>
+                        <p>Conceptos básicos de programación. Programación orientada a objetos. Programación JAVA. Lenguaje SQL. Creación de aplicaciones nativas ANDROID. Desarrollo de servicios WEB.</p>
+                    <li><strong>Certificado de profesionalidad de Sistemas informáticos Ifap -2017-</strong> 
+                        </li>
+                        <p>Instalación y configuración de sistemas operativos. Implantación de los elementos de la red local. Instalación y configuración de aplicaciones informáticas.</p>
+                    <li><strong>Estudios de Bachillerato
+                        I.E.S Errekaldeberri
+                        -2000-</strong></li>
+                    </ul>
+            </section>
+        </div>
+        
+        <div class="right-column">
+            <header>
+                <h1>TINA CALLEJA</h1>
+                <h2>Desarrolladora Web</h2>
+            </header>
+
+            <section class="about-me">
+                <h3>SOBRE MÍ</h3>
+                <p>Soy una persona autónoma, entusiasta, paciente y resolutiva. Me encantan los retos y el trabajo en equipo. Además siempre ofrezco mi ayuda y mis conocimientos a quien me lo pida o necesite.</p>
+            </section>
+
+            <section class="experience">
+                <h3>EXPERIENCIA</h3>
+                <ul>
+                    <li><strong>Sector informático</strong><p>Aduogroup Bilbao-2017 instalación y configuración de Windows Server(prácticas)</p>
+                   <p>Pesaje del norte-Bilbao 2008(informatizar datos)</p></li>
+                    <li><strong>Sector Hostelería: </strong>2015- 2018</li>
+                    <li><strong>Sector Socio-sanitario:</strong>2016</li>
+                    <li><strong>Sector Comercial:</strong> 2012</li>
+                    <li><strong>Sector Industria manufacturera:</strong> 2002/2008</li>
+                 </ul>  
+            </section>
+            
+            <section class="skills">
+                <h3>HABILIDADES</h3>
+                <P> <strong>STACK:</strong>  CSS, HTML5, GIT, JAVA, JAVASCRIPT, FIGMA, TRELLO, SCRUM</P>
+                <P><strong>APTITUDES:</strong> TRABAJO EN EQUIPO, RESILENCIA, EMPATÍA, PACIENCIA, AUTONOMÍA, GESTIÓN DEL TIEMPO, ADAPTABILIDAD </P>
+                <canvas id="idiomas-chart" width="400" height="300"></canvas>
+            </section>
+        </div>
+    </div>
+    <script>
+        var ctx = document.getElementById('idiomas-chart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Castellano (idioma materno)', 'Euskera', 'Inglés'],
+                datasets: [{
+                    label: ' Idiomas',
+                    data: [100, 50, 40], 
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.5)',
+                        'rgba(54, 162, 235, 0.5)',
+                        'rgba(0, 255, 0, 0.5)',  
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(0, 0, 255, 1)',
+                        'rgba(40, 114, 51, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+    
+</body>
+</html>

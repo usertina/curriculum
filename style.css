@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    justify-content:space-between;
+}
+ img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+.photo{
+    display: flex;
+    justify-content: center;
+}
+
+.left-column {
+    width: 50%; /* Ajusta según necesites */
+    margin-right: 10px;
+    border: 2px solid blue; /* Agrega borde derecho de color azul */
+    padding-right: 10px; /* Añade un poco de espacio para el borde */
+}
+
+.right-column {
+    width: 50%; 
+    border: 2px solid blue;/* Ajusta según necesites */
+}
+
+.header h1,
+.header h3 {
+    margin: 0;
+}
+
+.education,
+.about-me,
+.skills {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+}
+
