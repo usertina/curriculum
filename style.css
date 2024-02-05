@@ -14,14 +14,14 @@
 }
 
 .left-column {
-    width: 50%; /* Ajusta según necesites */
+    width: 49%; /* Ajusta según necesites */
     margin-right: 10px;
     border: 3px solid blue; /* Agrega borde derecho de color azul */
     padding-right: 10px; /* Añade un poco de espacio para el borde */
 }
 
 .right-column {
-    width: 50%; 
+    width: 51%; 
     border: 3px solid blue;/* Ajusta según necesites */
     padding-right: 10px;
 }
