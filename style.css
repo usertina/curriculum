@@ -23,6 +23,7 @@
 .right-column {
     width: 50%; 
     border: 3px solid blue;/* Ajusta según necesites */
+    padding-right: 10px;
 }
 .education,
 .experience,
