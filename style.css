@@ -1,6 +1,10 @@
 .container {
     display: flex;
     justify-content:space-between;
+    background-image: url(fotos/fondo4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
  img{
     width: 10rem;
