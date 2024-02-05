@@ -10,30 +10,31 @@
 .photo{
     display: flex;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 .left-column {
     width: 50%; /* Ajusta según necesites */
     margin-right: 10px;
-    border: 2px solid blue; /* Agrega borde derecho de color azul */
+    border: 3px solid blue; /* Agrega borde derecho de color azul */
     padding-right: 10px; /* Añade un poco de espacio para el borde */
 }
 
 .right-column {
     width: 50%; 
-    border: 2px solid blue;/* Ajusta según necesites */
+    border: 3px solid blue;/* Ajusta según necesites */
 }
-
-.header h1,
-.header h3 {
-    margin: 0;
-}
-
 .education,
+.experience,
 .about-me,
-.skills {
+.skills, h1, h2,h3, header{
     margin-top: 20px;
+    margin-left: 20px;
 }
+.about-me p{
+    margin-left: 20px;
+}
+
 
 @media screen and (max-width: 768px) {
     .container {
