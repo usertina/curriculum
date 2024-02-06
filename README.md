@@ -13,7 +13,6 @@ Tecnologías utilizadas
 
     HTML5
     CSS3
-    JavaScript
     Linux
     Git
     GitHub
@@ -25,7 +24,6 @@ Marcos de competencia
     CSS3
     Flex Box
     Responsive Design
-    JavaScript
     Linux
     Git
     GitHub
