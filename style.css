@@ -1,53 +1,36 @@
 .container {
-    display: flex;
-    justify-content:space-between;
-    background-image: url(fotos/fondo4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
- img{
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-}
-.photo{
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    align-items: center;
 }
 
-.left-column {
-    width: 49%; /* Ajusta según necesites */
-    border: 3px solid blue; /* Agrega borde derecho de color azul */
-    /* Añade un poco de espacio para el borde */
+.left-column, .right-column {
+    padding: 20px;
 }
 
-.right-column {
-    width: 51%; 
-    border: 3px solid blue;/* Ajusta según necesites */
-    
+.photo img {
+    width: 100%;
+    max-width: 200px; /* Por ejemplo, para limitar el ancho máximo de la foto */
+    height: auto;
+    border-radius:25%;
 }
-.education,
-.experience,
-.about-me,
-.skills, h1, h2,h3, header{
-    margin-top: 20px;
-    margin-left: 20px;
-}
-.about-me p{
-    margin-left: 20px;
-}
-
-
-@media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
+    .video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        opacity: 0.5; /* Ajusta el valor de la opacidad según lo desees */
     }
-
-    .left-column,
-    .right-column {
-        width: 100%;
-    }
+    
+/* Fuentes y texto adaptables */
+h1, h2, h3, p, a,ul {
+    color: white;
+    margin-bottom: 30px; /* Hacer que todos los textos sean blancos */
 }
 
+/* Otros estilos para hacer que tu página sea más responsive */
