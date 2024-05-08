@@ -28,3 +28,13 @@ var myChart = new Chart(ctx, {
 		}
 	}
 });
+
+function showIconText(element) {
+    element.querySelector('span.icon-text').style.display = 'block';
+}
+
+function hideIconText(element) {
+    element.querySelector('span.icon-text').style.display = 'none';
+}
+
+
