@@ -1,7 +1,9 @@
 
-![cap](https://github.com/usertina/curriculum/assets/124672039/60c05bda-4ee6-4a14-b038-665dde783dc2)
+![captura1](https://github.com/usertina/curriculum/assets/124672039/94c736ee-e981-4d18-a2b2-60a5910f5462)
 
-![cap1](https://github.com/usertina/curriculum/assets/124672039/eff2e429-68c0-42ff-8490-3e1d81038925)
+![captura2](https://github.com/usertina/curriculum/assets/124672039/619b6d66-836b-47a9-a1eb-f98308424b62)
+
+
 
 Sitio Web Currículum
 Tabla de contenido
